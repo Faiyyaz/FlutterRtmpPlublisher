@@ -82,7 +82,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
                 mPublisher.stopPublish()
                 mPublisher.stopRecord()
                 btnPublish.text = getString(R.string.start_publishing)
-
+                this.onBackPressed()
 //                btnPause.isEnabled = false
             }
         }
