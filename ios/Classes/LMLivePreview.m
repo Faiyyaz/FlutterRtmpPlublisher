@@ -115,6 +115,9 @@
             break;
         case LFLiveStop:
             _stateLabel.text = @"Not Connected";
+            [self.viewController dismissViewControllerAnimated:YES completion:^{
+              
+            }];
             break;
         default:
             break;

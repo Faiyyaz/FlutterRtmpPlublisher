@@ -74,7 +74,7 @@
       mainView.viewC = self.viewController;
       // mainView.result = result;
 
-    [mainView addSubview:self.cButton];
+      [mainView addSubview:self.cButton];
       
       _anotherViewController.view = mainView;
       // [_anotherViewController.view addSubview:mainView];
