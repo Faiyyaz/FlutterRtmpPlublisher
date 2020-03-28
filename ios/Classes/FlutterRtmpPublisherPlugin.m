@@ -65,6 +65,7 @@
   NSString *url = call.arguments[@"url"];
   if ([@"stream" isEqualToString:call.method]) {
     _anotherViewController = [[UIViewController alloc] init];
+    [_anotherViewController setModalPresentationStyle: UIModalPresentationFullScreen];
     [self.viewController presentViewController:_anotherViewController animated:NO completion:nil];
 
       LMLivePreview *mainView = [[LMLivePreview alloc] initWithFrame:CGRectMake(0, 0, self.viewController.view.bounds.size.width, self.viewController.view.bounds.size.height)];
